@@ -7,8 +7,6 @@ let addNoteForm = document.getElementById('add-note');
 let addNoteTitle = addNoteForm['title'];
 let addNoteContent = addNoteForm['content'];
 
-console.log(store.getState());
-
 // ------ Redux ------
 store.subscribe(() => {
   renderNotes();
