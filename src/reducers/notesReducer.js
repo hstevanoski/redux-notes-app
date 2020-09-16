@@ -1,14 +1,14 @@
 import { ADD_NOTE, REMOVE_NOTE } from '../actions/actions';
 
 function notesReducer(notes = [], action) {
-  switch(action.type) {
+  switch (action.type) {
     case ADD_NOTE:
       return [
         ...notes,
         {
           title: action.title,
-          content: action.content
-        }
+          content: action.content,
+        },
       ];
 
     case REMOVE_NOTE:
@@ -16,7 +16,7 @@ function notesReducer(notes = [], action) {
 
     default:
       return notes;
-  };
+  }
 }
 
 export default notesReducer;

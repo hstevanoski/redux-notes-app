@@ -4,9 +4,9 @@ import reducers from '../reducers/reducers';
 let initialState = {
   notes: [
     { title: 'You are awesome', content: 'No, wait, I meant legendary!' },
-    { title: 'Ooops', content: 'I was talking to myself' }
+    { title: 'Ooops', content: 'I was talking to myself' },
   ],
-  visibility: 'AWESOME_TAG'
+  visibility: 'AWESOME_TAG',
 };
 
 export default createStore(

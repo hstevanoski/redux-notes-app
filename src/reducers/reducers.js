@@ -4,7 +4,7 @@ import { combineReducers } from 'redux';
 
 const reducers = combineReducers({
   notes: notesReducer,
-  visibility: visibilityFilter
+  visibility: visibilityFilter,
 });
 
 export default reducers;
